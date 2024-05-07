@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="myH1"></h1>
+
+    <label id="countLabel">0</label><br>
+    
+    <div id="buttonContainer">
+        <button id="decrease" class="button">decrease</button>
+        <button id="reset" class="button">reset</button>
+        <button id="increase" class="button">increase</button>
+    </div>
+<br><br>
+    <div>
+        <input type ="checkbox" id="myCheckbox">
+        <label for="myCheckbox">checkbox 1</label><br><br>
+
+        <input type="radio" id="visaBtn" name="card">
+        <label for="visaBtn">Visa</label><br>
+        <input type="radio" id="masterCardBtn" name="card">
+        <label for="masterCardBtn">masterCard</label><br>
+        <input type="radio" id="blikBtn" name="card">
+        <label for="blikBtn">Blik</label><br>
+        <button type="submit" id="mySubmit">submit</button>
+
+        <p id="checkboxResult"></p>
+        <p id="paymentResult"></p>
+    </div>
+    
+    <br><br>
+
+    <div>
+        <form>
+            <h2>Temperature conversion<h2>
+                <input type="number" id="temperature" value="0">
+                <br>
+                <input type="radio" id="toFahrenheit" name="unit">
+                <label for="toFahrenheit">Celcius ▶ Fahrenheit</label>
+                <br><br>
+                <input type="radio" id="toCelcius" name="unit">
+                <label for="toCelcius">Fahrenheit ▶ Celcius</label>
+                <br>
+                <button type="button" onclick="convert()">submit</button>
+                <p id="temperatureResult"></p>
+        </form>
+    </div>
+    
+    <br><br>
+
+    <div id="diceContainer">
+        <h1>Dice Roller</h1>
+        <label> # of dice: </label>
+        <input id="inputDice" type="number" value="1" min="1">
+        <button onclick="rollDice()">Roll Dice</button>
+        <div id="diceResult"></div>
+        <div id="diceImages"></div>
+    </div>
+    <br><br>
+    <div id="passwordGenerator">
+        <h2>Password Generator</h2>
+        <label for="length">Length:</label>
+        <input type="number" id="length" min="8" value="8"><br>
+    
+        <label>Include Lowercase:</label>
+        <input type="checkbox" id="includeLowercase"><br>
+    
+        <label>Include Uppercase:</label>
+        <input type="checkbox" id="includeUppercase"><br>
+    
+        <label>Include Numbers:</label>
+        <input type="checkbox" id="includeNumbers"><br>
+    
+        <label>Include Symbols:</label>
+        <input type="checkbox" id="includeSymbols"><br>
+    
+        <button onclick="generatePassword()">Generate Password</button><br>
+        <p id="passwordResult"></p>
+    </div>
+    <script src = "index.js"></script>
+</body>
+</html>
