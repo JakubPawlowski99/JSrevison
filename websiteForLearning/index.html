@@ -52,16 +52,18 @@
     </div>
     
     <br><br>
-
-    <div id="diceContainer">
-        <h1>Dice Roller</h1>
-        <label> # of dice: </label>
-        <input id="inputDice" type="number" value="1" min="1">
-        <button onclick="rollDice()">Roll Dice</button>
-        <div id="diceResult"></div>
-        <div id="diceImages"></div>
+    <div id="passwordGenerator">
+            <h2>Dice Roller</h2>
+            <label> # of dice: </label>
+            <input id="inputDice" type="number" value="1" min="1">
+            <button onclick="rollDice()">Roll Dice</button>
+            <div id="diceResult"></div>
+            <div id="diceImages"></div>
     </div>
+
+
     <br><br>
+
     <div id="passwordGenerator">
         <h2>Password Generator</h2>
         <label for="length">Length:</label>
@@ -82,6 +84,33 @@
         <button onclick="generatePassword()">Generate Password</button><br>
         <p id="passwordResult"></p>
     </div>
+
+    <br><br>
+
+    <div id="passwordGenerator">
+        <h2>Stopwatch</h2>
+        <div id="stopwatchContainer">
+            <div id="display">
+                00:00:00:00
+            </div>
+            <div id="stopwatchControls">
+                <button id="startBtn" onclick="start()">Start</button>
+                <button id="stopBtn" onclick="stop()">Stop</button>
+                <button id="resetBtn" onclick="resetTimer()">Reset</button>
+            </div>
+                
+
+        </div>
+    </div>
+
+    <br><br>
+
+    <div id="passwordGenerator">
+        
+
+    </div>
+
+    
     <script src = "index.js"></script>
 </body>
 </html>

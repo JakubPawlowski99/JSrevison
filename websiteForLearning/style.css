@@ -106,3 +106,70 @@ input{
     cursor: pointer;
     color:azure;
 }
+
+#myH1{
+    font-size: 2rem;
+    font-family: Arial,  sans-serif;
+    color:hsl(0, 0%, 25%);
+}
+
+#stopwatchContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:  5px solid;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: white;
+
+}
+#display{
+    font-size: 3rem;
+    font-family: monospace;
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.3);
+}
+
+#stopwatchControls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#startBtn{
+    background-color: hsl(115, 100%, 40%);
+}
+#startBtn:hover{
+    background-color: hsl(115, 100%, 30%);
+}
+#startBtn:active{
+    background-color: hsl(115, 100%, 10%);
+}
+
+
+#stopBtn{
+    background-color: hsl(10, 90%, 40%);
+}
+#stopBtn:hover{
+    background-color: hsl(10, 90%, 30%);
+}
+#stopBtn:active{
+    background-color: hsl(10, 90%, 10%);
+}
+
+#resetBtn{
+    background-color: hsl(241, 77%, 57%);
+}
+#resetBtn:hover{
+    background-color: hsl(241, 77%, 30%);
+}
+#resetBtn:active{
+    background-color: hsl(241, 77%, 10%);
+}
+
+
