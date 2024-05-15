@@ -1,4 +1,12 @@
 
+//switch to light/dark mode
+document.getElementById('colorSwitch').addEventListener('change', function() {
+    if (this.checked) {
+        document.body.style.backgroundColor = "hsl(0,0%,15%)";
+    } else {
+        document.body.style.backgroundColor = "white";
+    }
+});
 
 const decrease = document.getElementById("decrease");
 const reset = document.getElementById("reset");
