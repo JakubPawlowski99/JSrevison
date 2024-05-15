@@ -1,7 +1,4 @@
-div{
-    font-family: Arial, sans-serif;
-    background-color: hsl(0, 0%, 95%);
-}
+
 
 h2{
     color:  hsl(223, 100%, 64%);
@@ -171,5 +168,60 @@ input{
 #resetBtn:active{
     background-color: hsl(241, 77%, 10%);
 }
+#calculatorBody{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    
+}
+#calculatorDisplay{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 29%);
+    color: white;
 
+}
+#calculatorKeys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    padding:25px;
+}
 
+#calculatorKeys button{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    border:none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+#calculatorKeys button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+#calculatorKeys button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+#calculatorKeys .operator-btn{
+    background-color: hsl(24, 80%, 53%);
+}
+#calculatorKeys .operator-btn:hover{
+    background-color: hsl(24, 80%, 63%);
+}
+#calculatorKeys .operator-btn:active{
+    background-color: hsl(24, 80%, 73%);
+}

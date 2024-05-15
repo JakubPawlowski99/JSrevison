@@ -34,7 +34,7 @@
     </div>
     
     <br><br>
-
+    <!--Temperature conversion-->
     <div>
         <form>
             <h2>Temperature conversion<h2>
@@ -50,7 +50,7 @@
                 <p id="temperatureResult"></p>
         </form>
     </div>
-    
+    <!--dice roller-->
     <br><br>
     <div id="passwordGenerator">
             <h2>Dice Roller</h2>
@@ -63,7 +63,7 @@
 
 
     <br><br>
-
+    <!--password generator-->
     <div id="passwordGenerator">
         <h2>Password Generator</h2>
         <label for="length">Length:</label>
@@ -87,6 +87,7 @@
 
     <br><br>
 
+    <!--stoper-->
     <div id="passwordGenerator">
         <h2>Stopwatch</h2>
         <div id="stopwatchContainer">
@@ -98,17 +99,38 @@
                 <button id="stopBtn" onclick="stop()">Stop</button>
                 <button id="resetBtn" onclick="resetTimer()">Reset</button>
             </div>
-                
-
         </div>
     </div>
 
     <br><br>
 
-    <div id="passwordGenerator">
-        
+    <!--calculator-->
+    <div id="calculatorBody">
+        <div id="calculator">
+            <input id="calculatorDisplay" readonly>
+            <div id="calculatorKeys">
+                <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')"class="operator-btn">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('/')"class="operator-btn">/</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()" >=</button>
+                <button onclick="clerCalculator()" class="operator-btn">C</button>
+            </div>
 
+        </div>>
     </div>
+
 
     
     <script src = "index.js"></script>

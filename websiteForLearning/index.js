@@ -200,3 +200,36 @@ function update(){
 
     display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
 }
+
+
+
+//calculator
+
+const calculatorDisplay = document.getElementById("calculatorDisplay");
+
+
+function appendToDisplay(input) {
+    const lastChar = calculatorDisplay.value.slice(-1);
+    const operators = ['+', '-', '*', '/'];
+
+    if (operators.includes(input) && operators.includes(lastChar)) {
+        // Prevent adding multiple operators in a row
+        return;
+    }
+
+    calculatorDisplay.value += input;
+}
+
+function clerCalculator(){
+    calculatorDisplay.value= "";
+}
+
+function calculate(){
+    try{
+        calculatorDisplay.value= eval(calculatorDisplay.value);
+    }
+    catch(error){
+        calculatorDisplay.value= "error";
+    }
+    
+}
