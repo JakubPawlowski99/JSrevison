@@ -1,5 +1,6 @@
 body {
     background-color: white; /* Initial background color */
+    font-family: Arial, sans-serif;
     transition: background-color 0.3s;
 }
 .switch-container {
@@ -267,4 +268,46 @@ input{
 }
 #calculatorKeys .operator-btn:active{
     background-color: hsl(24, 80%, 73%);
+}
+
+.choices{
+    margin-bottom: 30px;
+}
+
+.choices button{
+    font-size: 7rem;
+    min-width: 150px;
+    margin: 0 10px;
+    border-radius: 150px;
+    background-color: hsl(202, 59%, 61%);
+    transition: background-color 0.5s ease;
+}
+
+.choices button:hover{
+    background-color: hsl(202, 59%, 71%);
+}
+
+.choices button:active{
+    background-color: hsl(202, 59%, 81%);
+}
+
+#playerDisplay, #computerDisplay{
+    font-size: 2.5rem;
+}
+
+#resultRockPaperScissorsDisplay{
+    font-size: 5rem;
+    margin:30px 0;
+}
+
+.greenText, #playerScoreDisplay{
+    color: hsl(123, 64%, 55%)
+}
+
+.redText, #computerScoreDisplay{
+    color: hsl(0, 64%, 58%)
+}
+
+.scoreDisplay{
+    font-size: 2.5rem;
 }
